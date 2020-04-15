@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pohl <pohl@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: paulohl <paulohl@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:39:50 by pohl              #+#    #+#             */
-/*   Updated: 2020/03/02 12:46:21 by pohl             ###   ########.fr       */
+/*   Updated: 2020/04/15 10:07:56 by paulohl          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,5 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), void (*d)(void *));
 int				get_next_line(int fd, char **line);
 int				is_whitespace(char c);
 int				ft_intlen(int nbr);
-
+int				ft_strcmp(const char *s1, const char *s2);
 #endif
