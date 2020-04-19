@@ -3,21 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pohl <pohl@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: paulohl <paulohl@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 13:20:55 by pohl              #+#    #+#             */
-/*   Updated: 2020/01/15 15:04:28 by pohl             ###   ########.fr       */
+/*   Updated: 2020/04/19 20:37:06 by paulohl          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *str, char c)
 {
-	int i;
-
-	i = 0;
-	while (str[i] && str[i] != c)
-		i++;
-	if (str[i] == c)
-		return ((char *)(str + i));
+	while (*str && *str != c)
+		str++;
+	if (*str == c)
+		return ((char *)(str));
 	return (0);
 }
