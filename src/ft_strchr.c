@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+ * ft_strchr checks is character c is contained in const char *str.
+ * the function returns the char *str from the first occurence of c.
+ */
+
 char	*ft_strchr(const char *str, char c)
 {
 	while (*str && *str != c)
