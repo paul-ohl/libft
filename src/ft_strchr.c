@@ -13,6 +13,7 @@
 /*
  * ft_strchr checks is character c is contained in const char *str.
  * the function returns the char *str from the first occurence of c.
+ * It returns 0 if it doesn't find any occurence
  */
 
 char	*ft_strchr(const char *str, char c)
