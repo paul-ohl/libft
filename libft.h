@@ -6,7 +6,7 @@
 /*   By: paulohl <paulohl@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:39:50 by pohl              #+#    #+#             */
-/*   Updated: 2020/04/15 10:07:56 by paulohl          ###   ########.fr       */
+/*   Updated: 2020/07/01 10:24:30 by paulohl          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,15 @@
 # endif
 
 # include <strings.h>
+
+typedef struct	s_opt
+{
+	char	*optarg;
+	int		optind;
+	int		optopt;
+	int		opterr;
+	int		optreset;
+}				t_opt;
 
 typedef struct	s_list
 {
@@ -74,4 +83,7 @@ int				get_next_line(int fd, char **line);
 int				is_whitespace(char c);
 int				ft_intlen(int nbr);
 int				ft_strcmp(const char *s1, const char *s2);
+int				ft_getopt(t_opt *options, int argc,
+					char *argv[], char *optstring);
+
 #endif

@@ -10,7 +10,7 @@ SRCS		= ft_atoi.c ft_atoi_increment.c ft_bzero.c ft_calloc.c \
 				ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strmapi.c \
 				ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c \
 				ft_substr.c ft_tolower.c ft_toupper.c get_next_line.c \
-				is_whitespace.c
+				is_whitespace.c ft_getopt.c
 
 OBJ_DIR		= obj
 SRC_DIR		= src
