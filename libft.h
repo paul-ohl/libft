@@ -20,15 +20,6 @@
 
 # include <strings.h>
 
-typedef struct	s_opt
-{
-	char	*optarg;
-	int		optind;
-	int		optopt;
-	int		opterr;
-	int		optreset;
-}				t_opt;
-
 typedef struct	s_list
 {
 	void			*content;
@@ -83,7 +74,5 @@ int				get_next_line(int fd, char **line);
 int				is_whitespace(char c);
 int				ft_intlen(int nbr);
 int				ft_strcmp(const char *s1, const char *s2);
-int				ft_getopt(t_opt *options, int argc,
-					char *argv[], char *optstring);
 
 #endif
